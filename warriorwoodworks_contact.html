@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="warriorwoodworks.css" />
+		<link rel="stylesheet" type="text/css" href="warriorwoodworks_contact.css" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="warriorwoodworks_contact.js"></script>
+</head>
+<body>
+	<header>
+			<img src="images/Capture1.jpg" alt = "banner" width="100%">
+	</header>
+	<div id="background">
+	<div class="topnav" id="myTopnav">
+  			<a class="active" href="index.html">Home</a>
+  			<a href="warriorwoodworks_contact.html">Contact</a>
+  			<a href="warriorwoodworks_about.html">About</a>
+  			<a href="warriorwoodworks_gallery.html">Gallary</a>
+	</div>
+	<div id="contactus">
+		<h1>Contact Us</h1>
+		<p>You can contact us <a href="info@warrior-woodworks.com">here</a> at this email.</p>
+		<p>You can also contact us here on this site using the form to your right.</p>
+	</div>
+
+	<div id="wrapper">
+			<form method="post" 
+				  id="contact_form" 
+				  action="http://symlink.dk/code/php/submit/">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<hr />
+					<div class="formfield">
+						<label for="fname" class="client">First Name:</label>
+						<input type="text" id="fname" name="fname" size="30" maxlength="15" value="" autofocus="autofocus" required/>					
+						<div class="error" id="fname_error">* Please enter your first name.</div>
+					</div>
+					<div class="formfield">
+						<label for="lname" class="client" >Last Name: </label>
+						<input type="text" id = "lname" name="lname" size="30" maxlength="20" required />
+						<div class="error" id="lname_error">* Please enter your last name.</div>
+					</div>
+					<div class="formfield">
+						<label for="phone" class="client" >Telephone:&nbsp;</label>
+						<input type="tel" id = "phone" name="phone"  pattern="^\d{1}-\d{3}-\d{3}-\d{4}$" placeholder = "1-xxx-xxx-xxxx" required />
+						<div class="error" id="lname_error">* Please enter your phone number.</div>
+					</div>
+					<div class="formfield">
+						<label for="email" class="client">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						<input type="email" name="email" required />
+					</div>
+						<div class="formfield">
+						<label for="comment" class="client">Comment:&nbsp;&nbsp;</label>
+						<textarea name="comment" required></textarea>
+					</div>
+				</fieldset>
+					<fieldset>
+					<hr />
+					<input type="reset" value="Reset" />
+					<input type="submit" value="Submit" style="float: right;"/>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+<div class="footer"><a class="active" href="index.html">Home</a>
+  			<a href="warriorwoodworks_contact.html">Contact</a>
+  			<a href="warriorwoodworks_about.html">About</a>
+  			<a href="warriorwoodworks_gallery.html">Gallary</a></div>
+  		</body>
+</html>
